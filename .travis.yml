@@ -1,11 +1,12 @@
-sudo: required
-services:
-  - docker
+language: node_js
+node_js:
+  - 18.19
 
 before_install:
-  - docker pull node:18.19 # Use a Docker image with Node.js v18
-  - docker run -d -v $(pwd):/app -w /app node:18.19 npm install # Install dependencies inside the container
-  - docker run -v $(pwd):/app -w /app node:18.19 npm install @angular/cli # Install Angular CLI locally
+  - npm install -g @angular/cli@17.3 # Install Angular CLI version 17.3
+
+install:
+  - npm ci # Use clean install
 
 script:
-  - docker run --rm -v $(pwd):/app -w /app node:18.19 npm run test --watch=false --browsers=ChromeHeadless # Run tests
+  - ng test --watch=false --browsers=ChromeHeadless
