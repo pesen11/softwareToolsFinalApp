@@ -1,16 +1,12 @@
 language: node_js
 node_js:
-  - lts/* # Use the latest LTS version of Node.js
-
+  - 16
 cache:
   directories:
     - node_modules
-
 before_install:
-  - npm install -g @angular/cli # Ensure Angular CLI is installed
-
+  - npm install -g @angular/cli
 install:
-  - npm ci # Clean install dependencies
-
+  - npm ci
 script:
-  - ng test --watch=false --browsers=ChromeHeadless # Run tests in headless mode
+  - ng test --watch=false --browsers=ChromeHeadless
