@@ -1,6 +1,6 @@
 language: node_js
 node_js:
-  - 19 # You can also use a specific version like 18.19
+  - 18.19 # You can also use a specific version like 18.19
 cache:
   directories:
     - node_modules
