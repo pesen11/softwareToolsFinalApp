@@ -1,0 +1,77 @@
+/* Global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: #f4f7f6;
+  color: #2c3e50;
+  line-height: 1.6;
+  font-size: 16px;
+  padding: 0;
+  min-height: 100vh;
+}
+
+h1 {
+  color: #2980b9;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+nav {
+  background-color: #2980b9;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a.router-link-active {
+  background-color: #e67e22;
+  color: white;
+  transform: scale(1.1);
+}
+
+nav ul li a:hover {
+  background-color: #3498db;
+  color: white;
+  transform: scale(1.05);
+}
+
+/* Optional: Add a little style for the main content */
+.app-container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.active {
+  color: #f39c12;
+}

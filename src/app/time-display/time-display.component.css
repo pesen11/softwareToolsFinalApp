@@ -1,0 +1,32 @@
+/* Time Container */
+.time-container {
+  background-color: #34495e;
+  color: white;
+  padding: 40px;
+  border-radius: 12px;
+  font-size: 4rem;
+  font-family: "Courier New", monospace;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 450px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 768px) {
+  .time-container {
+    font-size: 3rem;
+    padding: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .time-container {
+    font-size: 2.5rem;
+    padding: 20px;
+  }
+}

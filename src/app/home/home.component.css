@@ -1,0 +1,71 @@
+/* Ensure that the container takes up the full screen height */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Full viewport height */
+  padding: 20px;
+  background-color: #ecf0f1;
+  text-align: center;
+  font-family: "Arial", sans-serif;
+  color: #2c3e50;
+  background: linear-gradient(135deg, #2980b9, #3498db);
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Title Styling */
+h1 {
+  font-size: 3rem;
+  color: #fff;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+/* Weather Info Section Styling */
+.weather-info {
+  margin-top: 40px;
+  background-color: #fff;
+  padding: 20px 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+}
+
+/* Weather Title Styling */
+h2 {
+  font-size: 2rem;
+  color: #2980b9;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+/* Temperature Styling */
+.temperature {
+  font-size: 1.5rem;
+  color: #e67e22;
+  font-weight: 600;
+}
+
+/* Responsive Design: Ensure proper scaling for smaller devices */
+@media (max-width: 768px) {
+  .home-container {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  .temperature {
+    font-size: 1.2rem;
+  }
+}
