@@ -5,6 +5,7 @@ services:
 before_install:
   - docker pull node:16 # Use a Docker image with Node.js v16
   - docker run -d -v $(pwd):/app -w /app node:16 npm install # Install dependencies inside the container
+  - docker run -v $(pwd):/app -w /app node:16 npm install -g @angular/cli # Install Angular CLI globally in the container
 
 script:
-  - docker run --rm -v $(pwd):/app -w /app node:16 npm run test --watch=false --browsers=ChromeHeadless
+  - docker run --rm -v $(pwd):/app -w /app node:16 npm run test --watch=false --browsers=ChromeHeadless # Run tests
