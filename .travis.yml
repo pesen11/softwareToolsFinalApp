@@ -1,9 +1,9 @@
 language: node_js
 os: linux
-dist: bionic # Use Bionic (Ubuntu 18.04) or focal (Ubuntu 20.04)
+dist: focal # Try using Focal (Ubuntu 20.04) or bionic (Ubuntu 18.04)
 
 node_js:
-  - 18.19 # Node.js version 18.19
+  - 18.19 # Set Node.js version to 18.19
 
 before_install:
   - npm install -g @angular/cli@17.3 # Install Angular CLI version 17.3 globally
